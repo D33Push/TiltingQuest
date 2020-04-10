@@ -1,5 +1,11 @@
 package tiltingQuest.frame;
 
-public class Frame {
+import javax.swing.JFrame;
+
+public class Frame extends JFrame{
+	
+	public Frame() {
+		
+	}
 
 }
