@@ -6,6 +6,8 @@ public class Frame extends JFrame{
 	
 	public Frame() {
 		
+		setName("Tilting Quest");
+		
 	}
 
 }
