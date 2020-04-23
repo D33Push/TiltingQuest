@@ -19,12 +19,14 @@ public class GUI extends JFrame{
 	
 	
 	private BufferedImage house;
+	private BufferedImage mage;
 	
 	
 	public GUI(int x, int y) {
 		
 	try {
-		house = ImageIO.read(new File("rsc/Grass01.png"));
+		house = ImageIO.read(new File("rsc/background/Grass01.png"));
+		mage = ImageIO.read(new File("rsc/mageWalk/mageWalking.png"));
 	}catch(IOException e) {
 		e.printStackTrace();
 		System.out.println("Bilder konnten nicht geladen werden");
@@ -47,6 +49,9 @@ public class GUI extends JFrame{
 	        		g.drawImage(house,x ,y , this);
 	        	}
 	        }
+	      }
+	      if(mage != null) {
+	    	  g.drawImage(mage, 100, 200, this);
 	      }
 	}
 }

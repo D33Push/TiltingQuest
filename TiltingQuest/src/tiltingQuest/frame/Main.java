@@ -3,7 +3,7 @@ package tiltingQuest.frame;
 public class Main {
 
 	public static void main(String[] args) {
-		new GUI(1000, 1500);
+		new GUI(800, 700);
 	}
 
 }
